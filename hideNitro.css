@@ -1,6 +1,9 @@
-/* CUSTOM QUICK CSS TO HIDE NITRO UPSELLS BY NPXTUNE */
+/* CUSTOM QUICK CSS TO HIDE NITRO UPSELLS BY TIMDEVORG */
 
 /* Hide Nitro and Shop Buttons over Friends list */
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div > nav > div.scroller_c47fa9.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8 > ul > li:nth-child(3), li:nth-child(3) {
+    display: none;
+}
 #app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div > nav > div.scroller_c47fa9.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8 > ul > li:nth-child(3), li:nth-child(4) {
     display: none;
 }

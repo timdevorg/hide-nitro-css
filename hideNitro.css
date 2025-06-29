@@ -1,70 +1,89 @@
 /* CUSTOM QUICK CSS TO HIDE NITRO UPSELLS BY TIMDEVORG */
 
-/* Hide Nitro and Shop Buttons over Friends list */
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div > nav > div.scroller_c47fa9.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8 > ul > li:nth-child(3), li:nth-child(3) {
-    display: none;
-}
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div > nav > div.scroller_c47fa9.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8 > ul > li:nth-child(3), li:nth-child(4) {
-    display: none;
+/* Hide Nitro button in DMs */
+li:has([data-list-item-id*="nitro"]),
+li:has([data-list-item-id*="shop"]) {
+    display: none !important;
 }
 
-/* Hide nitro app theme in appearance settings */
-#appearance-tab > div > div.children_aba8cb > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div {
-    display: none;
+/* Hide gift buttons in chat */
+[class*="button"][aria-label*="gift" i],
+[class*="button"][aria-label*="Send a gift" i] {
+    display: none !important;
 }
 
-/* Hide nitro app icon in appearance settings */
-#appearance-tab > div > div.children_aba8cb > div:nth-child(2) > div.selectionGroup_f2b958 {
-    display: none;
+/* Hide Nitro & Server Boost tab in settings */
+[class*="premiumTab"],
+.sidebarRegion__23e6b nav > div > div:nth-child(15) {
+    display: none !important;
 }
 
-/* Hide the Nitro & Server Boost tab in settings */
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div:nth-child(2) > div > div.sidebarRegion_c25c6d > div > nav > div > div.premiumTab_c10c74.item_a0.themed_a0 {
-    display: none;
+/* Multiple selectors (3) to try and hide the nitro ad banner in "Profiles" settings */
+
+/* Hide Nitro ads in profile customization */
+[class*="container"][style*="background-image: url"] {
+    display: none !important;
 }
 
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div:nth-child(2) > div > div.sidebarRegion_c25c6d > div > nav > div > div:nth-child(14) {
-    display: none;
+/* Target by the "Go to Shop" button text */
+#profile-customization-tab button:has(.contents__201d5:contains("Go to Shop")) {
+    display: none !important;
 }
 
-/* Hide merch button*/
-div.item__48dda:nth-child(43) {
-    display: none;
+/* Target the entire ad container by its content */
+#profile-customization-tab div:has(h3:contains("Give your profile a fresh look")) {
+    display: none !important;
 }
 
-/* Hide the palworld ad in the profil tab */
-#profile-customization-tab > div.container_da1432 {
-    display: none;
+/* Hide user banners */
+[class*="container__4bbc6"],
+[class*="userBanner"] {
+    display: none !important;
 }
 
-/* Hide the nitro ads in profile tab */
-#profile-customization-tab > div.premiumFeatureBorder__6ac04.featureBorder__404e3.tryItOutSection_d658ca {
-    display: none;
+/* Hide profile effects */
+[class^="profileEffects"],
+[class*="profileEffects"] {
+    display: none !important;
 }
 
-#profile-customization-tab > div:nth-child(5) > div > div > div.sectionsContainer_d2a766 > div.upsellOverlayContainer__9580e > div.upsellOverlay__988e7 {
-    display: none;
+/* Hide avatar decorations */
+[class^="avatarDecoration"],
+[class*="avatarDecoration"] {
+    display: none !important;
 }
 
-/* Hide gift button*/
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.chat_a7d72e > div.content_a7d72e > main > form > div > div > div > div > div.buttons_d0696b > button {
-    display: none;
+/* Try and disable store links (might be wonky) */
+[href="/store"],
+[href="/shop"] {
+    display: none !important;
 }
 
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.chat_a7d72e > div.content_a7d72e > main > form > div > div.channelTextArea_a7d72e.channelTextArea_bdf0de > div > div > div.buttons_bdf0de > button {
-    display: none;
+/* Hide boost text */
+[data-list-item-id*="boosts"] {
+    display: none !important;
 }
 
-/* Hide nitro ad invite */
-div.flex-2S1XBF:nth-child(4) {
-    display: none;
+/* Hide boost progress containers */
+li:has([data-list-item-id*="boosts"]) {
+    display: none !important;
 }
 
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.chat_a7d72e > div.content_a7d72e > div > div > div.none_c49869.scrollerBase_c49869 > div.overlayBackground_c69a7b.overlay2_a465ac {
-    display: none;
+/* Hide boost prompts */
+[class*="boostPrompt"],
+[class*="premiumPrompt"] {
+    display: none !important;
 }
 
-/* Hide Activities bar */
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > nav > div.scroller_c47fa9.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8 > ul > div.container_e5a9ed {
-    display: none;
+/* Hide boost progress bars by class */
+[class*="progressBar"][class*="container"],
+[class*="goalText"],
+[class*="progressFraction"] {
+    display: none !important;
+}
+
+/* Hide elements containing boost-related text */
+div:has(span:contains("Buy Boosts")),
+div:has(div:contains("Boosts")) {
+    display: none !important;
 }

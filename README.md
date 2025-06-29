@@ -6,7 +6,7 @@ Use the CSS file this way:
 Add the URL to your themes:
 
 ```
-https://raw.githubusercontent.com/npxtune/hide-nitro-css/main/hideNitro.css
+https://raw.githubusercontent.com/timdevorg/hide-nitro-css/main/hideNitro.css
 ```
 This should always fetch the latest version of the CSS from this GitHub repo.
 
